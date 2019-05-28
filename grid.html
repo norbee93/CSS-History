@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Grid</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+    <div id="top-of-page"></div>
+    <div id="grid-container">
+        <nav class="grid-page">
+            <ul>
+                <li><a href="index.html">Home</li></a>
+                <li><a href="css-history.html">CSS</li></a>
+                <li><a href="flexbox.html">Flexbox</li></a>
+                <li><a href="grid.html">Grid</li></a>
+                <li><a href="grid-design.html">Grid Design</li></a>
+            </ul>
+        </nav>
+
+        <h1 class="grid-page">
+            <span id="g">G</span>
+            <span id="r">r</span>
+            <span id="i">i</span>
+            <span id="d">d</span>
+            <span id="box1"></span>
+            <span id="box2"></span>
+            <span id="box3"></span>
+
+        </h1>
+
+        <p id="p1" class="grid-page">
+            CSS Grid Layout is useful for dividing a page into areas
+            based on column and row lines. Like Flexbox, a Grid container
+            is defined in CSS, and all elements inside the container become
+            Grid elements that can be positioned based on the Grid lines.
+            <sup><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout">1</a></sup>
+        </p>
+
+        <p id="p2" class="grid-page">
+            According to
+            <a href="https://en.wikipedia.org/wiki/Bert_Bos">Bert Bos</a>,
+            he had thought about grid-based web layouts for CSS, because
+            he wanted to capture elements of book and magazine layouts.
+            <sup><a href="https://alistapart.com/article/the-story-of-css-grid-from-its-creators/">2</a></sup>
+            The W3C had received grid-based layout proposals before 2011,
+            but this was the first that had implementation to consider.
+            The 2011 Grid proposal includes comparison to tables, in the way
+            that elements can be aligned with rows and columns but allows for
+            more variety of layouts that are not possible with table based layout.
+            Grid is designed to be easier than table or float based layouts, to
+            adapt layouts to available space. It also offers a more ideal way of
+            overlapping elements, where position is determined by grid lines. It
+            was previously difficult to overlap elements in a flexible way.
+            <sup><a href="https://alistapart.com/article/the-story-of-css-grid-from-its-creators/">3</a></sup>
+        </p>
+
+        <p id="p3" class="grid-page">
+            In the 2013 draft of Grid, it was included that Grid was intended to be a
+            two-dimensional system. This differed from Flexbox, in which 2 dimensional
+            layout was only possible by nesting flex container boxes.
+            <sup><a href="https://alistapart.com/article/the-story-of-css-grid-from-its-creators/">4</a></sup>
+            Rachel Andrew, a web developer and Invited Expert of the CSS Working Group,
+            <sup><a href="https://24ways.org/2012/css3-grid-layout/#author ">5</a></sup>
+            was an early experimenter with CSS, after she attended a lecture about grid-based layouts by Bert Bos.
+            She made <a href="https://gridbyexample.com/">examples</a> to help people learn CSS Grid Layout.
+            <br>
+            <br>
+            It is also possible to make a nested Grid, such as the form below. The form element is a Grid container
+            and the form elements are also Grid elements. Grid can be useful for layout of whole pages as well
+            as elements on the page.
+        </p>
+
+
+        <div id="form">
+
+            <form>
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" id="firstName" placeholder="Your name">
+
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" placeholder="Your email">
+
+                <label for="signup">Subscribe to newsletter</label>
+                <input type="checkbox" name="signup" id="signup">
+
+                <label for="how-referred">How should we refer to you?</label>
+                <div id="she"><input type="radio" name="how-referred" value="she">She/Her </div>
+                <div id="he"><input type="radio" name="how-referred" value="he">He/Him</div>
+                <div id="they"><input type="radio" name="how-referred" value="they">They/Them</div>
+                <div id="other"><input type="radio" name="how-referred" value="other"> Other <input type="text"
+                        name="other" id="other"></div>
+
+                <label for="country">Select your continent</label>
+                <select id="country">
+                    <option value="north-america">North America</option>
+                    <option value="south-america">South America</option>
+                    <option value="central-america">Central America</option>
+                    <option value="africa">Africa</option>
+                    <option value="asia">Asia</option>
+                    <option value="australia">Australia</option>
+                    <option value="europe">Europe</option>
+                    <option value="antartctica">Antarctica</option>
+                </select>
+
+
+                <label for="birthday">Tell us your Birthday!</label>
+                <input type="date" name="birthday" id="birthday">
+
+                <label for="comments">Questions or Comments</label>
+                <textarea rows="4" cols="50" placeholder="Type your message here" id="comments"></textarea>
+
+                <label for="reset-button"></label>
+                <input type="reset" value="clear form" id="reset-button">
+
+                <input type="submit" name="submit" value="Submit" id="submit-button" />
+            </form>
+        </div>
+
+        <footer>
+            <a href="mailto:epurcel7@student.ccp.edu" id="email">Email</a>
+            <a href="#top-of-page" id="back-to-top">Back to Top</a>
+        </footer>
+
+    </div>
+</body>
+
+</html>

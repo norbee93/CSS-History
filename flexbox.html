@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+    <div id="top-of-page"></div>
+    <div id="grid-container">
+        <nav class="flexbox-page">
+            <ul>
+                <li><a href="index.html">Home</li></a>
+                <li><a href="css-history.html">CSS</li></a>
+                <li><a href="flexbox.html">Flexbox</li></a>
+                <li><a href="grid.html">Grid</li></a>
+                <li><a href="grid-design.html">Grid Design</li></a>
+            </ul>
+        </nav>
+        <img src="images/blue-pink-zig-zaG.png" class="top-image">
+        <h1 class="flexbox-page">Flexbox</h1>
+
+        <p id="p1">
+            The first W3C specification for CSS Flexible box layout (Flexbox) was released in 2009.
+            The main purpose of flexbox was to create an additional box model in which a parent element
+            acts as the ‘container’ and the elements inside of the container, or its children, can be
+            distributed horizontally or vertically across the size of the container. The container can
+            adjust to different sizes as a user may change the browser window size. The developer would
+            specify how the child elements would distribute space or expand to fill the container. The
+            specification also states that these container boxes may be nested to create layouts utilizing
+            both dimensions. <sup><a href="https://www.w3.org/TR/2009/WD-css3-flexbox-20090723/">1</a></sup>
+        </p>
+
+        <p id="p2">
+            <a href="https://twitter.com/tabatkins?lang=en">Tab Atkins Jr</a> is a current editor of CSS specifications
+            and became an editor
+            of the Flexbox specification in 2011<sup><a
+                    href="http://annairish.github.io/historicizing/history">2</a></sup>
+            and in 2013 Atkins rewrote a draft of Flexbox that made it more efficient.
+            <sup><a href="https://medium.com/@BennyOgidan/history-of-css-grid-and-css-flexbox-658ae6cfe6d2 ">3</a></sup>
+            The following year in 2014, Atkins gave a presentation at a web conference in which he
+            described the 4 main layout operations of Flexbox: direction, alignment, ordering and flexibility.
+            There are CSS properties based on these operations that are designed to be used together. These
+            Flexbox operations can simplify CSS tasks that were previously tricky. An example Atkins gives
+            is making a centered horizontal navigation bar. The solution was to make the navigation bar as
+            an unordered list and have that be the parent container. The list items would be
+            the navigation links and flex items that are children of the container element ul.
+            The list items are centered and with 3 simple CSS rules it is possible to make a flexible
+            centered horizontal navigation bar.This method also ensures that spacing the elements doesn’t
+            rely on padding, which doesn’talways scale to different sizes well.
+            <sup><a href="https://vimeo.com/98746172 ">4</a></sup>
+        </p>
+
+
+        <footer>
+            <a href="mailto:epurcel7@student.ccp.edu" id="email">Email</a>
+            <a href="#top-of-page" id="back-to-top">Back to Top</a>
+        </footer>
+
+    </div>
+</body>
+
+</html>

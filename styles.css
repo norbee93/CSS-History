@@ -1,0 +1,634 @@
+/* FOR ALL SCREEN SIZES */
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Alte Haas Regular";
+    src: url("fonts/AlteHaasGroteskRegular.ttf")
+}
+
+@font-face {
+    font-family: "Alte Haas Bold";
+    src: url("fonts/AlteHaasGroteskBold.ttf")
+}
+
+/* LINK STYLES  */
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:active {
+    color: white;
+    background-color: black;
+}
+
+p a:link {
+    text-decoration: underline;
+}
+
+sup a:link {
+    text-decoration: none;
+}
+
+sup a:hover {
+    text-decoration: underline;
+}
+
+/* END LINK STYLES  */
+
+/* FOR SMALL SCREENS 100-815px */
+
+/* @media only screen and (min-width: 100px) and (max-width:815px) { */
+
+#grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+}
+
+body {
+    font-family: "Alte Haas Regular";
+    font-size: 1.1em;
+}
+
+/* NAVBAR STYLES SM SCRN*/
+
+nav {
+    grid-row: 1 / 2;
+    list-style-type: none;
+    background-image: url("images/wavy-graphic-mobile-header.png");
+    background-repeat: no-repeat;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    align-self: center;
+    list-style-type: none;
+    font-size: 1.2em;
+}
+
+h1 {
+    font-family: "Alte Haas Bold";
+    grid-row: 2 / 3;
+    justify-self: center;
+    border: solid black 2px;
+    padding: 10px;
+}
+
+h2 {
+    grid-row: 3 /4;
+    justify-self: end;
+    background-color: black;
+    color: white;
+}
+
+p {
+    width: 75%;
+    justify-self: center;
+}
+
+#p1 {
+    grid-column: 1 /2;
+    grid-row: 4 / 5;
+}
+
+#p2 {
+    grid-column: 1 /2;
+    grid-row: 5 / 6;
+}
+
+img.top-image {
+    display: none;
+}
+
+footer {
+    display: flex;
+    grid-row: 9 / span 1;
+    grid-column: 1 / 2;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2em;
+}
+
+/* HOME PAGE SPECIFIC SM SCRN */
+
+nav.home-page {
+    background-image: url("images/grid-pattern-mobile-header2.png");
+}
+
+/* END HOME PAGE SPECIFIC SM SCRN */
+
+/* CSS HISTORY SPECIFIC SM SRN */
+
+nav.css-history {
+    background-image: url("images/triangle-pattern-header-mobile.png");
+}
+
+#p1.css-history {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+blockquote.css-history {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    font-family: "Alte Haas Bold";
+}
+
+#p2.css-history {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+}
+
+/*END CSS HISTORY SPECIFIC SM SRN */
+
+/* FLEXBOX PAGE SPECIFC SM SCRN */
+
+nav.flexbox-page {
+    background-image: url("images/zig-zag-mobile-header.png");
+}
+
+/* END FLEXBOX PAGE SPECIFC SM SCRN */
+
+/* GRID DESIGN PAGE SPECIFIC SM SRN */
+
+ol {
+    grid-column: 1 /2;
+    grid-row: 6 / 7;
+}
+
+ol img {
+    height: 400px;
+    height: 20em;
+}
+
+ol li {
+    justify-items: center;
+}
+
+nav.grid-design-page {
+    background-image: url("images/wave-pattern-header-mobile.gif")
+}
+
+/* END GRID DESIGN PAGE SPECIFIC SM SRN */
+
+/* GRID PAGE SPECIFIC SM SCRN  */
+
+/* FORM STYLES FOR 1 COLUMN CENTER FORM */
+
+nav.grid-page {
+    background-image: url("images/checkerboard-pattern-header-mobile.gif");
+}
+
+#p3.grid-page {
+    grid-column: 1 /2;
+    grid-row: 6 / 7;
+}
+
+form {
+    border: black solid 2px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+div#form {
+    grid-row: 7 /8;
+    grid-column: 1 / 2;
+    justify-self: center;
+}
+
+label {
+    justify-self: center;
+    align-self: center;
+    margin: 8px;
+    font-size: 1em;
+    font-weight: bold;
+    color: coral;
+}
+
+input[type=text] {
+    width: 75%;
+    font-family: sans-serif;
+    border: 2px solid coral;
+    padding: 8px;
+    margin: 15px;
+    justify-self: center;
+}
+
+#submit-button {
+    background-color: coral;
+    width: 100%;
+    height: 4em;
+    color: white;
+    font-weight: bold;
+}
+
+#reset-button {
+    background-color: #d3d3d3;
+    width: 100%;
+    height: 4em;
+    box-sizing: border-box;
+}
+
+#submit-button:hover {
+    background-color: #d3d3d3;
+}
+
+input[type=checkbox] {
+    margin: 15px;
+}
+
+input#signup {
+    justify-self: center;
+}
+
+div#other {
+    width: 25%;
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 1.4em;
+}
+
+#she, #he, #they, #other {
+    padding: 0.5em;
+}
+
+div#she {
+    align-self: end;
+}
+
+select#country, input#birthday {
+    height: 2.5em;
+}
+
+/* GRID PAGE SPECIFIC SM SCRN  */
+
+/* END FOR SMALL SCREENS  */
+
+@media only screen and (min-width: 650px) {
+    #grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        max-width: 960px;
+        margin: 0 auto;
+        justify-items: center;
+    }
+    body {
+        font-family: "Alte Haas Regular";
+        font-size: 1em;
+    }
+    img.top-image {
+        display: block;
+        height: 400px;
+        width: 75%;
+        grid-column: 2 / span 2;
+        grid-row: 2 /span 3;
+        justify-self: start;
+        position: relative;
+        left: 3.5em;
+    }
+    h1 {
+        font-family: "Alte Haas Bold";
+        font-size: 4.6em;
+        grid-row: 2 / span 1;
+        grid-column: 1 / span 4;
+        z-index: 3;
+        padding: 0.25em;
+        position: relative;
+        bottom: -0.7em;
+        justify-self: start;
+    }
+    h2 {
+        font-family: "Alte Haas Bold";
+        font-size: 1em;
+    }
+    p {
+        font-family: "Alte Haas Regular";
+        padding: 0.5em;
+        font-size: 1.2em;
+        max-width: 16em;
+        background-color: white;
+        margin: 15px;
+    }
+    #p1 {
+        grid-column: 3 / span 2;
+        grid-row-start: 3;
+        justify-self: start;
+        z-index: 3;
+    }
+    #p2 {
+        grid-column: 1 / 3;
+        grid-row: 5 / 7;
+        justify-self: end;
+    }
+    /* NAVBAR STYLES */
+    nav {
+        grid-row: 1 / span 1;
+        grid-column: 1 / span 4;
+        background-image: none;
+        width: 80%;
+    }
+    nav ul {
+        /*Make nav bar horizontal */
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    nav ul li {
+        font-size: 1.3em;
+        align-self: start;
+    }
+    /* END NAVBAR STYLES */
+    footer {
+        grid-column: 1 / 5;
+        width: 80%;
+    }
+    /* FLEXBOX PAGE */
+    h1.flexbox-page {
+        border: none;
+        letter-spacing: 0.8em;
+        font-family: "Alte Haas Regular";
+        justify-self: center;
+    }
+    /*END FLEXBOX PAGE */
+    /* GRID PAGE */
+    h1.grid-page {
+        border: none;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        height: 200px;
+        width: 5em;
+        font-size: 6em;
+        font-family: "Alte Haas Regular";
+        grid-column: 1 / 5;
+        justify-self: center;
+        top: -0.5em;
+    }
+    nav.grid-page {
+        background-image: none;
+    }
+    #p3.grid-page {
+        grid-column: 1 / 5;
+        grid-row: 7 / 8;
+        max-width: none;
+        width: 80%;
+    }
+    #g {
+        grid-row: 4 / 5;
+        grid-column: 1 / 2;
+        position: relative;
+        bottom: 0.75em;
+    }
+    #r {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+        justify-self: center;
+    }
+    #i {
+        grid-row: 3 / 4;
+        grid-column: 3 / 4;
+        justify-self: center;
+    }
+    #d {
+        grid-row: 3 / 4;
+        grid-column: 4 / 5;
+        justify-self: end;
+        position: relative;
+        top: 0.5em;
+    }
+    span#box1 {
+        height: 100%;
+        width: 100%;
+        background-color: pink;
+        grid-row: 1 / 2;
+        grid-column: 1 /2;
+    }
+    span#box2 {
+        height: 100%;
+        width: 100%;
+        background-color: pink;
+        grid-row: 4 / 5;
+        grid-column: 2 /3;
+    }
+    span#box3 {
+        height: 100%;
+        width: 100%;
+        background-color: pink;
+        grid-row: 1 / 3;
+        grid-column: 4 / 5;
+    }
+    /* FORM STYLES ON GRID PAGE*/
+    form {
+        max-width: 700px;
+        border: black solid 2px;
+        padding: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    div#form {
+        grid-row: 8 /9;
+        grid-column: 1 / 5;
+        justify-self: center;
+    }
+    label {
+        justify-self: center;
+        align-self: center;
+        margin: 8px;
+        font-size: 1.2em;
+    }
+    input[type=text] {
+        width: 75%;
+        font-family: sans-serif;
+        border: 2px solid coral;
+        padding: 8px;
+        margin: 15px;
+        justify-self: start;
+    }
+    #submit-button {
+        grid-column: 2 / 3;
+    }
+    #reset-button {
+        background-color: #d3d3d3;
+        width: 100%;
+        height: 4em;
+        box-sizing: border-box;
+        grid-column: 1 / 2;
+    }
+    #submit-button:hover {
+        background-color: #d3d3d3;
+    }
+    input[type=checkbox] {
+        margin: 15px;
+    }
+    input#signup {
+        justify-self: start;
+    }
+    div#other {
+        width: 25%;
+        display: flex;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+    #she, #he, #they, #other {
+        grid-column: 2 / 3;
+        padding: 0.5em;
+    }
+    div#she {
+        align-self: end;
+    }
+    textarea {
+        grid-column: 2 / 3;
+    }
+    /* END FORM STYLES */
+    /*END GRID PAGE */
+    /* GRID DESIGN PAGE */
+    h2.grid-design-page {
+        font-family: "Alte Haas Regular";
+        grid-row: 3 / 4;
+        grid-column: 1 / 3;
+        justify-self: center;
+        z-index: 3;
+        font-size: 2em;
+    }
+    h1.grid-design-page {
+        border: none;
+        border-bottom: solid black 5px;
+        width: 80%;
+    }
+    ol {
+        grid-column: 2 / span 2;
+        grid-row: 7 / 8;
+    }
+    nav.grid-design-page {
+        background-image: none;
+    }
+    /*END GRID DESIGN PAGE */
+    /* FLEXBOX PAGE */
+    nav.flexbox-page {
+        background-image: none;
+    }
+    /*END FLEXBOX PAGE */
+    /* CSS HISTORY PAGE */
+    nav.css-history {
+        background-image: none;
+    }
+    #p1.css-history {
+        grid-column: 3 / span 2;
+        grid-row-start: 3;
+    }
+    blockquote.css-history {
+        grid-column: 2 / span 2;
+        grid-row-start: 4;
+    }
+    #p2.css-history {
+        grid-column: 1 / span 2;
+        grid-row-start: 5;
+    }
+    #p3.css-history {
+        grid-column: 1 / span 4;
+        grid-row-start: 6;
+        max-width: none;
+        width: 80%;
+    }
+    #p4.css-history {
+        grid-column: 1 / span 4;
+        grid-row-start: 7;
+        max-width: none;
+        width: 80%;
+    }
+    /* END CSS HISTORY PAGE */
+    /* BEGIN HOME PAGE */
+    h1.home-page {
+        font-size: 5em;
+        grid-row: 2 / 4;
+        grid-column: 3 / 5;
+        border: 2px black solid;
+        padding: 15px;
+        z-index: -1;
+        width: 85%;
+        white-space: nowrap;
+        min-width: 4.8em;
+    }
+    h2.home-page {
+        grid-row: 3 / 4;
+        grid-column: 1 / 3;
+        justify-self: end;
+        z-index: 1;
+        font-size: 3em;
+        background-color: black;
+        color: white;
+        height: 50%;
+        padding: 0.3em;
+    }
+    table {
+        border: 1px solid black;
+        border-collapse: collapse;
+        z-index: 2;
+        grid-row: 2 /3;
+        grid-column: 1 /3;
+        width: 90%;
+    }
+    td {
+        border: 1px solid black;
+    }
+    #rectangle {
+        background-color: pink;
+        height: 400px;
+        width: 85%;
+        position: relative;
+        top: 240px;
+        left: 6px;
+        grid-row: 2;
+        grid-column: 2 / 4;
+    }
+    #p1.home-page {
+        grid-column: 3 / span 2;
+        grid-row-start: 3;
+        max-width: 16em;
+        justify-self: start;
+        position: relative;
+        left: 20px;
+        background-color: white;
+    }
+    #p2.home-page {
+        grid-column: 1 / span 2;
+        max-width: 16em;
+        justify-self: end;
+        background-color: white;
+    }
+    nav.home-page {
+        background-image: none;
+    }
+    /* END HOME PAGE */
+}
+
+/*  END LARGE MEDIA QUERY */

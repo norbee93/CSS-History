@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS History</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+    <div id="top-of-page"></div>
+    <div id="grid-container">
+        <nav class="css-history">
+            <ul>
+                <li><a href="index.html">Home</li></a>
+                <li><a href="css-history.html">CSS</li></a>
+                <li><a href="flexbox.html">Flexbox</li></a>
+                <li><a href="grid.html">Grid</li></a>
+                <li><a href="grid-design.html">Grid Design</li></a>
+            </ul>
+        </nav>
+        <img src="images/traingle-pattern.png" class="top-image"
+            alt="a graphic image with a gray and pink triangle pattern">
+        <h1>CSS History</h1>
+
+        <p id="p1" class="css-history">
+            When the first website was made in 1991 by <a href="https://www.w3.org/People/Berners-Lee/">Tim Berners
+                Lee</a>, there was no styling of the content,
+            it was just HTML.
+            <sup><a href="https://eager.io/blog/the-languages-which-almost-were-css/">1</a></sup>
+            There were different ideas about how websites should introduce styling elements.
+            One idea was using HTML to code style elements. Netscape was one browser that implemented
+            presentational elements directly in the HTML. Another idea was to have a stylesheet
+            associated with a certain browser. Pei-Yuan Wei developed Viola in 1992,
+            <sup><a href="https://css-tricks.com/look-back-history-css/">2</a></sup>
+            a browser with its own built in style sheet language.
+            <sup><a href="http://1997.webhistory.org/www.lists/www-talk.1993q4/0264.html ">3</a></sup><br>
+            <br>
+            There also came a push for the styling of the HTML elements to be seperate
+            from the HTML itself. For example, Robert Raisch made a proposal in 1993 to
+            create a separate format to hold styling information,
+        </p>
+
+        <blockquote class="css-history">
+            “There is a need within the WWW to be able to specify rendering
+            specific information along with the content tagging in a WWW document.
+            It is not appropriate to use HTML for this purpose, since one of the
+            first principles of HTML is to encode objects within a document, not how
+            they might be rendered in a particular environment.”
+            -Robert Raisch<sup><a href="http://1997.webhistory.org/www.lists/www-talk.1993q2/0445.html">4</a></sup>
+        </blockquote>
+
+        <p id="p2" class="css-history">
+            Among Raisch and Wei there were proposals made for other style sheets
+            before CSS.<sup><a href="https://www.w3.org/Style/History/Overview.en.html">5</a></sup>
+            <br>
+
+            In October of 1994 Tim Berners-Lee founded the World Wide Web Consortium(W3C).
+            <sup><a href="https://www.w3.org/News/1994.">6</a></sup>
+            The W3C played in an important role in standardizing web
+            languages and practices. Around the same time in 1994,
+            <a href="https://en.wikipedia.org/wiki/H%C3%A5kon_Wium_Lie">Hakon W. Lie</a>
+            proposed a rough draft of CSS called Cascading HTML Style Sheets.
+            <sup><a href="https://www.w3.org/People/howcome/p/cascade.html">7</a></sup>
+            <a href="https://en.wikipedia.org/wiki/Bert_Bos">Bert Bos</a>
+            responded to Hakon W. Lie’s proposal. Bert Bos was working on an another
+            styling language for the browser Argo, called
+            <a href="https://www.w3.org/People/Bos/style.html">Stream-based Style Sheet Proposal</a> or (SSP).
+
+        </p>
+
+        <p id="p3" class="css-history">
+            In 1995 Hakon W Lie and Bert Bos released Cascading Style Sheets Level 1
+            <sup><a href="https://www.w3.org/TR/WD-css1-951117.html ">8</a></sup>
+            , which allowed the style sheet authors to change the presentation of HTML files
+            with fonts colors and layout. With the W3C gaining popularity by companies that wanted
+            to comply to its' standards, browsers began to implement CSS recommendations.
+            Microsoft released Internet Explorer 3.0 in 1996, which was the first widely
+            used browser with CSS support.
+            <sup><a href="https://www.w3.org/Style/CSS/msie/">9</a></sup>
+            Other browsers such as Netscape and Opera followed shortly after.
+            <sup><a href="https://www.w3.org/Style/CSS20/history.html">10</a></sup>
+            Drafts for the next CSS specification, CSS2 began in 1997 and stated that the editors
+            wanted to consider both 'CSS authors and CSS implementers'
+            <sup><a href="https://www.w3.org/Style/CSS20/history.html">11</a></sup>
+        </p>
+
+        <p id="p4" class="css-history">
+            In 2000 Internet Explorer 5 for Macintosh was released by Microsoft.
+            <sup><a href="https://www.w3.org/wiki/The_history_of_the_Web">12</a></sup>
+            It was the default installed browser for Mac computers,
+            since this was before Safari, but the significance was that it took
+            many of the W3C recommendations for CSS. This was a big step for
+            standardizing web practices, but how different browsers implemented CSS
+            caused bugs and made things difficult on developers.
+            They made hacks and workarounds to make CSS work how they wanted.
+            An example of this was the CSS box model. The box model helps specify
+            how the HTML elements are spaced and displayed on the page. Internet
+            explorer had its own box model that differed from the W3C model in the
+            way it calculated the total width of elements with padding and margins.
+            <sup><a
+                    href="https://www.456bereastreet.com/archive/200612/internet_explorer_and_the_css_box_model/">13</a></sup>
+            Many preferred Internet Explorer’s version, because it counted the margin
+            and padding space around the element as part of the total width of the content.
+            Though W3C standardized its own box model version in 2001,
+            <sup><a href="https://www.w3.org/TR/2001/WD-css3-box-20010726/ ">14</a></sup>
+            some designers were still using work-arounds to get IE's version in the 2010s.
+            <sup><a href="https://www.designedbyaturtle.co.uk/traditional-box-model-vs-w3c-box-model/">15</a></sup>
+        </p>
+
+
+
+        <footer>
+            <a href="mailto:epurcel7@student.ccp.edu" id="email">Email</a>
+            <a href="#top-of-page" id="back-to-top">Back to Top</a>
+        </footer>
+    </div>
+</body>
+
+</html>
